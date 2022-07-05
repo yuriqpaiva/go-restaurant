@@ -32,7 +32,7 @@ const ModalEditFood = ({
       <Form
         ref={formRef.current as Ref<FormHandles> | undefined}
         onSubmit={handleSubmit}
-        initialData={editingFood}
+        initialData={editingFood as FoodData}
       >
         <h1>Editar Prato</h1>
         <Input name="image" placeholder="Cole o link aqui" />
